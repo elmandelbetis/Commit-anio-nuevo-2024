@@ -8,7 +8,7 @@ wn.title("FELIZ AÑO NUEVO!!!")
 
 # Creación del objeto turtle
 betis = turtle.Turtle()
-betis.speed(15)  # Velocidad del dibujo
+betis.speed(7)  # Velocidad del dibujo
 
 # Función dibujante de círculos de color específico
 def circulo_central(radio, x, y):
