@@ -1,11 +1,10 @@
 import turtle
-import time
 
 # Configuración de la ventana de salida
 wn = turtle.Screen()
 wn.setup(width=1920, height=1080)
 wn.bgcolor("black")
-wn.title("FELIZ AÑO NUEVO 2024")
+wn.title("FELIZ AÑO NUEVO!!!")
 
 # Creación del objeto turtle
 betis = turtle.Turtle()
@@ -79,6 +78,116 @@ def circulo(radio,x,y):
     betis.begin_fill() # Rellenamos de blanco
     betis.circle(radio)
     betis.end_fill() # Termina rellenado
+    
+# Función para dibujar una letra 'F'
+def dibujar_letra_F():
+    betis.penup()
+    betis.goto(-850, 250)
+    betis.pendown()
+    betis.left(90)
+    betis.forward(100)
+    betis.right(90)
+    betis.forward(60)
+    betis.backward(60)
+    betis.right(90)
+    betis.forward(50)
+    betis.left(90)
+    betis.forward(50)
+
+# Función para dibujar una letra 'E'
+def dibujar_letra_E():
+    betis.penup()
+    betis.goto(-850, 200)
+    betis.pendown()
+    betis.left(90)
+    betis.forward(60)
+    betis.backward(60)
+    betis.right(90)
+    betis.forward(60)
+    betis.left(90)
+    betis.forward(50)
+    betis.backward(50)
+    betis.right(90)
+    betis.forward(50)
+    betis.left(90)
+    betis.forward(60)
+
+# Función para dibujar una letra 'L'
+def dibujar_letra_L():
+    betis.penup()
+    betis.goto(-850, -70)
+    betis.pendown()
+    betis.left(90)
+    betis.forward(100)
+    betis.backward(100)
+    betis.right(90)
+    betis.forward(60)
+
+# Función para dibujar una letra 'I'
+def dibujar_letra_I():
+    betis.penup()
+    betis.goto(-875, -150)
+    betis.pendown()
+    betis.forward(100)
+    betis.backward(50)
+    betis.right(90)
+    betis.forward(100)
+    betis.left(90)
+    betis.forward(50)
+    betis.backward(100)
+
+# Función para dibujar una letra 'Z'
+def dibujar_letra_Z():
+    betis.penup()
+    betis.goto(-875, -325)
+    betis.pendown()
+    betis.forward(100)
+    betis.right(135)
+    betis.forward(140)
+    betis.left(135)
+    betis.forward(100)
+    
+def dibujar_letra_A():
+    betis.penup()
+    betis.goto(700, 350)
+    betis.pendown()
+    betis.forward(100)
+    betis.right(90)
+    betis.forward(100)
+    betis.backward(50)
+    betis.left(90)
+    betis.backward(100)
+    betis.right(90)
+    betis.forward(50)
+    betis.backward(100)
+    
+def dibujar_letra_N():
+    betis.penup()
+    betis.goto(700, 100)
+    betis.pendown()
+    betis.forward(90)
+    betis.backward(90)
+    betis.left(45)
+    betis.forward(125)
+    betis.right(45)
+    betis.backward(90)
+    betis.penup()
+    betis.goto(710, 120)
+    betis.left(90)
+    betis.pendown()
+    betis.forward(70)
+    
+def dibujar_letra_O():
+    betis.penup()
+    betis.goto(700, -70)
+    betis.pendown()
+    betis.forward(100)
+    betis.right(90)
+    betis.forward(100)
+    betis.right(90)
+    betis.forward(100)
+    betis.right(90)
+    betis.forward(100)
 
 # Dibujamos la estructura base del escudo
 circulo_central(126, 0, -126)
@@ -273,6 +382,37 @@ betis.goto(85,170)
 betis.pendown()
 betis.setheading(70)
 betis.forward(105)
+
+
+betis.color("#0BB363")
+#Dibujando las letras del feliz año nuevo 2024
+betis.setheading(0)
+dibujar_letra_F()
+betis.right(90)
+betis.color("white")
+dibujar_letra_E()
+betis.color("#0BB363")
+dibujar_letra_L()
+betis.color("white")
+dibujar_letra_I()
+betis.color("#0BB363")
+dibujar_letra_Z()
+dibujar_letra_A()
+betis.color("white")
+dibujar_letra_N()
+betis.color("#0BB363")
+dibujar_letra_O()
+
+betis.penup()
+betis.goto(750, -250)
+betis.right(180)
+betis.color("white")
+betis.pendown()
+betis.forward(75)
+betis.penup()
+betis.forward(40)
+betis.pendown()
+betis.forward(10)
 
 
 turtle.exitonclick()
